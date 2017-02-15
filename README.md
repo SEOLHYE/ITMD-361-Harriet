@@ -1,1 +1,3 @@
-#ITMD 361 - Project One
+#ITMD 361 
+Fundamental of Web Development
+SEOL HYE
