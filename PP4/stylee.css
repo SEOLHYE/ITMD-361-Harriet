@@ -1,0 +1,45 @@
+html{
+
+	 font-family : verdana, cursive , sans-serif;
+     font: Tahoma;
+     color:pink
+    
+     
+    
+}
+
+body
+{
+ background-image:url("http://kingofwallpapers.com/space/space-007.jpg")
+ 
+}
+h1 {
+     
+     text-align: center;
+  
+	 
+}
+
+h4 {
+     
+     text-align: center;
+  
+	 
+}
+
+table,tr,th,td
+{
+  
+  text-align: center;
+  font-size: 30px
+  border-color: pink; 
+  border :1px solid pink;
+  
+}
+
+footer
+
+{
+  text-align: center;
+  
+}
