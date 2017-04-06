@@ -1,4 +1,4 @@
-#ITMD 361 - Project Two
+# ITMD 361 - Project Two
 
 1. index3.html
 2. resume3.html
