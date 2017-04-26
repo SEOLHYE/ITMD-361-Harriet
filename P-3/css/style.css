@@ -39,6 +39,7 @@ h1 {
 #po a{
  color:white;
  font-size:30pt;
+ display: inline-block;
 }
 #about h2 {
 
@@ -85,6 +86,7 @@ h1 {
 }
 #about ul { 
       text-align:center;
+      display: inline-block;
 	
 
  }
