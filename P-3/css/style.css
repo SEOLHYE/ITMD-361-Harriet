@@ -27,6 +27,7 @@ h1 {
 	  background-color : purple;
 	color : white;
 	  height: 95px;
+	display: inline-block;
 	
 
 }
