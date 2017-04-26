@@ -19,13 +19,15 @@ h1 {
   
 }
 
-#point{ 
-	  list-style-type :none;
+#point : hover { 
+	  list-style-type : none;
       margin:0;
       padding:0;
 	  overflow:hidden;
-	  background-color:purple;
+	  background-color : purple;
+	  color : white;
 	  height: 95px;
+	
 
 }
 #po { 
@@ -83,5 +85,6 @@ h1 {
 }
 #about ul { 
       text-align:center;
+	
 
  }
