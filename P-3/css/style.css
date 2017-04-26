@@ -25,10 +25,7 @@ h1 {
       padding:0;
 	  overflow:hidden;
 	  background-color : purple;
-	color : white;
 	  height: 80px;
-
-	
 
 }
 #po { 
@@ -42,8 +39,6 @@ h1 {
 #po a{
 	
  color:white;
-	
-	
  font-size:75px;
 	
 	
@@ -93,9 +88,8 @@ h1 {
  text-align: center;
 }
 #about ul { 
-      text-align:center;
 	
-      
+      text-align:center;
 	
 
  }
