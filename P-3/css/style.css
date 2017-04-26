@@ -86,6 +86,7 @@ h1 {
 }
 #about ul { 
       text-align:center;
+	display: inline-block;
       
 	
 
