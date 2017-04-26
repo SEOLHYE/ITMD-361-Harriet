@@ -34,6 +34,7 @@ h1 {
 #po { 
  
  text-align: center;
+	display: inline-block;
 
 }
 
