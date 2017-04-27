@@ -52,7 +52,12 @@
     <div id="map"></div>
     <script>
       function initMap() {
+
         var jamwon = {lat: 37.512926, lng: 127.011708};
+	var customLabel = {
+        jamwon: {
+          label: 'J'
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: jamwon
