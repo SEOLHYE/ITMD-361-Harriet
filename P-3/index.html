@@ -43,8 +43,11 @@
             <li>Korea</li>
             <li>Korean</li>
       </ul>
-      
+	 
+	 
+ <div id="map"></div>
  <h2>Map of My City</h2>
+	
      <script>
         var map;
 	function initMap()
@@ -52,11 +55,12 @@
 	        map = new google.maps.Map(document.getElementById('map'), 
 		 {
 		center: {lat: 3751291.7, lng: 127.011729},
+		scrollwheel: false,
 		zoom: 15
 		   });
 	      }
        </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEhxIItfTtF-fqP3mvbnExsTjrmtSL_-g&callback=initMap"
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnX4scbb2AWpxvjelPxBRlRgVaGxKYUBg&callback=initMap"
     async defer></script>
       
  <h2>Hobby</h2>
