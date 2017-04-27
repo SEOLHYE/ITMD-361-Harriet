@@ -48,30 +48,23 @@
 
  <h2>Map of My City</h2>
 	
-     <script>
-	 <div id="map"></div>
-        var map;
-	function initMap()
-	     {
-		var Jamwon = {lat: 40.674
-			      , lng: 73.945};    
-	        var map = new google.maps.Map(document.getElementById('map'), 
-		 {
-		center : Jamwon	
-		scrollwheel: false,
-		zoom: 15
-		   });
-		  var marker = new google.maps.Marker
-		  ({
-                   position: Jamwon,
-                   map: map
-                   });
-
-	      }
-       </script>
-	<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDodK3ULXDWTtIiX8wgl-va6VK8gReRbfI&callback=initMap">
-	 </script>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var jamwon = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: jamwon
+        });
+        var marker = new google.maps.Marker({
+          position: jamwon,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyDodK3ULXDWTtIiX8wgl-va6VK8gReRbfI&callback=initMap">
+    </script>
       
  <h2>Hobby</h2>
  <ul>
