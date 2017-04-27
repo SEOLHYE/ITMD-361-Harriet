@@ -58,6 +58,13 @@
           zoom: 15,
           center: jamwon
         });
+	          var infowindow = new google.maps.InfoWindow;
+        infowindow.setContent('<b>Hello</b>');
+
+        var marker = new google.maps.Marker({map: map, position: cairo});
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
 	  var marker = new google.maps.Marker({
           position: jamwon,
           map: map
@@ -75,6 +82,7 @@
           map.setZoom(8);
           map.setCenter(marker.getPosition());
         });
+    
 
       }
     </script>
