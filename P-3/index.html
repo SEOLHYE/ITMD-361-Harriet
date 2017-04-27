@@ -66,7 +66,6 @@
           infowindow.open(map, marker);
           map.setZoom(8);
           map.setCenter(marker.getPosition());
-	  map.panTo(latLng);
         });
 	
         map.addListener('center_changed', function() {
