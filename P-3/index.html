@@ -63,7 +63,7 @@
 	      
         var marker = new google.maps.Marker({map: map, position: jamwon});
 	      
-        marker.addListener('click', function() {
+        marker.addListener('click', function(e) {
           infowindow.open(map, marker);
           map.setZoom(8);
           map.setCenter(marker.getPosition());
@@ -73,18 +73,20 @@
          
           window.setTimeout(function() {
             map.panTo(marker.getPosition());
-          placeMarkerAndPanTo(e.latLng, map)
           }, 3000);
         })
+	      
+       map.addListener('click', function(e) {
+         
+        });
+      }
 
       function placeMarkerAndPanTo(latLng, map) {
         var marker = new google.maps.Marker({
           position: latLng,
           map: map
         });
-        map.panTo(latLng);
-      }
-
+        map.panTo(latLng)
 
       }
     </script>
