@@ -101,6 +101,7 @@ footer
 
 #map
 {
-  width : 300px;
-  height : 300px;
+  margin: auto;
+  width: 300px; 
+  height: 400px;
 }
