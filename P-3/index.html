@@ -60,18 +60,21 @@
         });
 	          var infowindow = new google.maps.InfoWindow;
         infowindow.setContent('<b>Hello</b>');
-
+	      
+     function placeMarkerAndPanTo(latLng, map) {
         var marker = new google.maps.Marker({map: map, position: jamwon});
         marker.addListener('click', function() {
           infowindow.open(map, marker);
           map.setZoom(8);
           map.setCenter(marker.getPosition());
+	  map.panTo(latLng);
         });
 	
         map.addListener('center_changed', function() {
          
           window.setTimeout(function() {
             map.panTo(marker.getPosition());
+            placeMarkerAndPanTo(e.latLng, map);
           }, 3000);
         });
 
