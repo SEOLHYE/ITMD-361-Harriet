@@ -62,7 +62,15 @@
           position: jamwon,
           map: map
         });
-        
+      
+      function attachSecretMessage(marker, secretMessage) {
+        var infowindow = new google.maps.InfoWindow({
+          content: "HI"
+        });
+
+        marker.addListener('click', function() {
+          infowindow.open(marker.get('map'), marker);
+        });
       }
     </script>
 	 
