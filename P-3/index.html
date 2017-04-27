@@ -61,16 +61,21 @@
 	  var marker = new google.maps.Marker({
           position: jamwon,
           map: map
+          title: 'Click to zoom'
         });
-      
-      function attachSecretMessage(marker, secretMessage) {
-        var infowindow = new google.maps.InfoWindow({
-          content: "HI"
+
+        map.addListener('center_changed', function() {
+         
+          window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+          }, 3000);
         });
 
         marker.addListener('click', function() {
-          infowindow.open(marker.get('map'), marker);
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
         });
+
       }
     </script>
 	 
