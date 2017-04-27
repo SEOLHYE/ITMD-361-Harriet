@@ -62,6 +62,7 @@
         infowindow.setContent('<b>Hello</b>');
 	      
         var marker = new google.maps.Marker({map: map, position: jamwon});
+	      
         marker.addListener('click', function() {
           infowindow.open(map, marker);
           map.setZoom(8);
@@ -72,16 +73,18 @@
          
           window.setTimeout(function() {
             map.panTo(marker.getPosition());
-            placeMarkerAndPanTo(e.latLng, map);
+          placeMarkerAndPanTo(e.latLng, map)
           }, 3000);
-        });
-	      
-        function placeMarkerAndPanTo(latLng, map) {
+        })
+
+      function placeMarkerAndPanTo(latLng, map) {
         var marker = new google.maps.Marker({
           position: latLng,
           map: map
         });
         map.panTo(latLng);
+      }
+
 
       }
     </script>
