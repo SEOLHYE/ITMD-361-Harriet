@@ -52,16 +52,24 @@
         var map;
 	function initMap()
 	     {
-	        map = new google.maps.Map(document.getElementById('map'), 
+		var Jamwon = {lat: 3751291.7, lng: 127.011729};    
+	        var map = new google.maps.Map(document.getElementById('map'), 
 		 {
-		center: {lat: 3751291.7, lng: 127.011729},
+		center : Jamwon	
 		scrollwheel: false,
 		zoom: 15
 		   });
+		  var marker = new google.maps.Marker
+		  ({
+                   position: Jamwon,
+                   map: map
+                   });
+
 	      }
        </script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnX4scbb2AWpxvjelPxBRlRgVaGxKYUBg&callback=initMap"
-    async defer></script>
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnX4scbb2AWpxvjelPxBRlRgVaGxKYUBg&callback=initMap">
+	 </script>
       
  <h2>Hobby</h2>
  <ul>
